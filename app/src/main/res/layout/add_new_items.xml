@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="350dp"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/imgUpload"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:src="@drawable/bestburger"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnChooseImg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Choose Image"
+            android:textAllCaps="false"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:drawableTop="@drawable/ic_baseline_add_a_photo_24"/>
+
+
+        <EditText
+            android:id="@+id/edtItemName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:hint="Item Name"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Choose Category"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="5dp"/>
+        <Spinner
+            android:id="@+id/spnCategory"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            />
+
+
+        <EditText
+            android:id="@+id/edtQty"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:inputType="number"
+            android:hint="Quantity"/>
+
+        <EditText
+            android:id="@+id/edtPrice"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+           android:inputType="numberDecimal"
+            android:hint="Price"/>
+
+
+
+        <EditText
+            android:id="@+id/edtIIng"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+
+            android:inputType="textMultiLine"
+            android:hint="Ingredients"/>
+
+
+        <EditText
+            android:id="@+id/edtImessage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:inputType="textMultiLine"
+            android:hint="Message"/>
+
+
+
+        <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnSaveItem"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:text="Save Item"
+            android:textAllCaps="false"/>
+
+
+
+
+    </LinearLayout>
+
+</ScrollView>
